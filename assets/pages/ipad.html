@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/ipad.css">
+    <title>iPad</title>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="../../index.html"><img src="../img/logo.png" alt="Logo do iPhone" class="logo"></a>
+            <ul>
+                <li><a href="../pages/ipad.html"       id="ipad"      >iPad       </a></li>
+                <li><a href="../../index.html"      id="iphone"    >iPhone     </a></li>
+                <li><a href="../pages/formulario.html" id="suporteBtn">Suporte    </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="circle"></div>
+            <div class="main-text">
+                <img src="../img/ipad.png" alt="">
+                <h3>Seu Novo iPad.</h3>
+
+                <p>O iPad combina design elegante com tecnologia de ponta, oferecendo uma experiência única para produtividade e entretenimento.</p>
+
+                <h6>A partir de R$ 2.499</h6>
+                
+                <a href="#" class="btn">Comprar</a>
+                <div class="text">
+                   <h5>Escolha sua cor favorita:</h5>
+                </div>
+                <div class="content">
+                    <span id="rosa"   onclick="imgSlider('../img/iPadRosa.png'    ); circleChange('#d84d78')"></span>
+                    <span id="azul"   onclick="imgSlider('../img/iPadAzul.png'    ); circleChange('#5697ac')"></span>
+                    <span id="branco" onclick="imgSlider('../img/iPadBranco.png'  ); circleChange('#f7f2ee')"></span>
+                </div>                
+            </div>
+            <div class="main-img">
+                <img src="../img/iPadRosa.png" alt="Imagem do iPad" id="device">
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+        function imgSlider(e){
+            document.querySelector('#device').src = e;
+        }
+        function circleChange(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        document.getElementById('ipad').classList.add('check');
+    </script>
+</body>
+</html>

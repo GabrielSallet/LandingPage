@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+body {
+    background: #e8e6e7;
+}
+
+header {
+    padding: 20px 70px;
+    background: #1d1d1f;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation .logo {
+    width: 50px;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.navigation ul li a {
+    color: #888;
+    font-weight: 600;
+    padding-bottom: 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.navigation ul li a:hover {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.navigation ul li a.check {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+main section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+}
+
+.main-text img {
+    width: 15rem;
+    margin-bottom: 3vh;
+}
+
+.main-text h3 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.main-text p {
+    margin-bottom: 1.5rem;
+}
+
+.main-text h6 {
+    color: #999;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.main-text .btn {
+    padding: 10px 25px;
+    background: #0071e3;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+
+.main-text .btn:hover {
+    opacity: .85;
+}
+
+.main-text .text h5 {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main-text .content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-text .content span {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px #888;
+    transition: all 0.5s;
+}
+
+.main-text .content span:hover {
+    opacity: .80;
+}
+
+#green {
+    background: #384937;
+}
+
+#pink {
+    background: #f8ddd6;
+}
+
+#blue {
+    background: #225f7e;
+}
+
+#black {
+    background: #192028;
+}
+
+#white {
+    background: #f7f2ee;
+}
+
+#red {
+    background: #ae0617;
+}
+
+.main-img {
+    transition: all 1s ease;
+    z-index: 100;
+}
+
+.main-img img {
+    width: 500px;
+    transform: rotate(-7deg);
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #445c42;
+    clip-path: circle(800px at right 1000px);
+}
+
+.hidden {
+    display: none;
+}
+
+#formularioSuporte {
+    margin: 20px 70px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+@media (max-width: 1200px) {
+    header {
+        padding: 20px 30px;
+    }
+
+    .navigation ul {
+        gap: 30px;
+    }
+
+    .main-text img {
+        width: 12rem;
+    }
+
+    .main-text h3 {
+        font-size: 3rem;
+    }
+
+    .main-text .btn {
+        font-size: 1.2rem;
+    }
+
+    .main-text .text h5 {
+        font-size: 0.9rem;
+    }
+
+    .main-img img {
+        width: 400px;
+    }
+}
+@media (max-width: 768px) {
+    .navigation {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navigation ul li a {
+        font-size: 1.2rem;
+    }
+
+    main section {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .main-text img {
+        width: 10rem;
+    }
+
+    .main-text h3 {
+        font-size: 2.5rem;
+    }
+
+    .main-text .btn {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+
+    .main-text .text h5 {
+        font-size: 0.8rem;
+    }
+
+    .main-img img {
+        width: 300px;
+    }
+
+    .circle {
+        clip-path: circle(500px at right 800px);
+    }
+}
+@media (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .navigation .logo {
+        width: 40px;
+    }
+
+    .navigation ul {
+        gap: 15px;
+    }
+
+    .navigation ul li a {
+        font-size: 1rem;
+    }
+
+    main section {
+        padding: 1rem;
+    }
+
+    .main-text img {
+        width: 8rem;
+    }
+
+    .main-text h3 {
+        font-size: 2rem;
+    }
+
+    .main-text .btn {
+        font-size: 0.9rem;
+        padding: 6px 15px;
+    }
+
+    .main-text .text h5 {
+        font-size: 0.7rem;
+    }
+
+    .main-img img {
+        width: 250px;
+    }
+
+    .circle {
+        clip-path: circle(400px at right 600px);
+    }
+}
